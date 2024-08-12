@@ -18,6 +18,7 @@ export class ErrorBoundary extends React.Component {
     if (props.resetCodition !== state.resetCodition) {
       return { hasError: true, resetCodition: props.resetCodition };
     }
+    return null;
   }
 
   render() {
