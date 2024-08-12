@@ -8,6 +8,7 @@ import styles from "./App.module.css";
 import ReactSwitch from "react-switch";
 import { useTheme } from "./hooks/useTheme";
 import { useState } from "react";
+import { Modals } from "./components/Modals";
 
 export const App = () => {
   const [checked, setChecked] = useState(false);
@@ -36,6 +37,7 @@ export const App = () => {
           id="material-switch"
         />
         <p>Theme {theme}</p>
+        <Modals />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
