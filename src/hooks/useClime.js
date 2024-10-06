@@ -5,7 +5,7 @@ export const useClime = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const API_KEY = "5ec5ae37f0213d125b35f6355a2189ba";
+  const API_KEY = "";
 
   const getClime = async (inputValue) => {
     try {
